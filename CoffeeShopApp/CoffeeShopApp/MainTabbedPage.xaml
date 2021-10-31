@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeeShopApp.MainTabbedPage">
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="Menu" BackgroundImageSource="bg.jpeg">
+        <StackLayout Padding="40">
+            
+            <Frame Padding="0" CornerRadius="100" VerticalOptions="Start" IsClippedToBounds="True"  HorizontalOptions="Center">
+                <Image Source="Logo.png" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="158" WidthRequest="160"/>
+            </Frame>
+            
+            
+
+            <Frame Padding="0" CornerRadius="100">
+                <Button FontSize="Medium" x:Name="EspressoButton" Text="Espresso" TextColor="#FFD576" BackgroundColor="#6F6F6F" Clicked="EspressoButton_Clicked"    />
+            </Frame>
+
+            <Frame Padding="0" CornerRadius="100">
+                <Button FontSize="Medium" x:Name="HotDrinksButton" Text="Hot Drinks" TextColor="#FFD576" BackgroundColor="#6F6F6F" Clicked="HotDrinksButton_Clicked"/>
+            </Frame>
+
+            <Frame Padding="0" CornerRadius="100">
+                <Button FontSize="Medium" x:Name="ColdDrinksButton" Text="Cold Drinks" TextColor="#FFD576" BackgroundColor="#6F6F6F" Clicked="ColdDrinksButton_Clicked"/>
+            </Frame>
+
+            <Frame Padding="0" CornerRadius="100">
+                <Button FontSize="Medium" x:Name="QuickBitesButton" Text="Quick Bites" TextColor="#FFD576" BackgroundColor="#6F6F6F" Clicked="QuickBitesButton_Clicked"/>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="About us" >
+        <StackLayout>
+            <Frame Padding="0" CornerRadius="30" VerticalOptions="Start" IsClippedToBounds="True"  HorizontalOptions="Center">
+                <Image Source="ShopImage.png" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="200" WidthRequest="250"/>
+            </Frame>
+
+            <Frame>
+                <Label FontSize="Medium" Text="JULES CAFE"/>
+                
+            </Frame>
+
+            <Frame>
+                <Label Text="4A Kent Street &#10; New Market &#10; Auckland &#10; Auckland &#10; 1023 &#10;  &#10; +64 9 444 5555 &#10;  &#10; infor@julescafe.co.nz" />
+            </Frame>
+            
+            <Frame>
+                
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25*" />
+                        <ColumnDefinition Width="25*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Grid.Row="0" Source="Facebook.png" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="80" WidthRequest="80"/>
+                    <Image Grid.Column="1" Grid.Row="0" Source="Insta.png" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="80" WidthRequest="80"/>
+                </Grid>
+
+            </Frame>
+
+        </StackLayout>
+        
+
+    </ContentPage>
+    
+    <ContentPage Title="Map">
+        <WebView Source="https://www.google.com/maps/dir/-36.9169841,174.7336184/jule+cafe+new+market/@-36.8900543,174.7038717,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x6d0d4876375441d9:0xe8676f770803059c!2m2!1d174.7742438!2d-36.8683542"/>
+    </ContentPage>
+</TabbedPage>

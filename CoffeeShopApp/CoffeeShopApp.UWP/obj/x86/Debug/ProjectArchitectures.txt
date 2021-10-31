@@ -1,0 +1,1 @@
+C:\Users\alxx9\Desktop\Term 2\CoffeeShopApp\CoffeeShopApp.UWP\CoffeeShopApp.UWP.csproj;x86

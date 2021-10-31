@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeeShopApp.HotDrinksPage"
+             BackgroundImageSource="bg.jpeg">
+
+
+
+    <ContentPage.Content>
+        <StackLayout Padding="40">
+            <Frame>
+                <Label FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" Text="Hot"/>
+            </Frame>
+
+            <Frame>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25*" />
+                        <ColumnDefinition Width="25*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Grid.Row="0"  Text="Blonde Cafe Latte"/>
+                    <Label Grid.Column="1" Grid.Row="0"  Text="$3.75"/>
+
+                    <Label Grid.Column="0" Grid.Row="1"  Text="Caramel Macchiato"/>
+                    <Label Grid.Column="1" Grid.Row="1"  Text="$4.25"/>
+
+                    <Label Grid.Column="0" Grid.Row="2"  Text="Skinny Mocha"/>
+                    <Label Grid.Column="1" Grid.Row="2"  Text="$4.00"/>
+
+                    <Label Grid.Column="0" Grid.Row="3"  Text="Hot Coffee"/>
+                    <Label Grid.Column="1" Grid.Row="3"  Text="$3.25"/>
+
+                    <Label Grid.Column="0" Grid.Row="4"  Text="Irish Coffee"/>
+                    <Label Grid.Column="1" Grid.Row="4"  Text="$4.25"/>
+                    
+
+                </Grid>
+
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

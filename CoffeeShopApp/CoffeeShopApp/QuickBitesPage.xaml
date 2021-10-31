@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeeShopApp.QuickBitesPage"
+             BackgroundImageSource="bg.jpeg">
+
+
+
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Frame>
+                <Label FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" Text="Quick Bites"/>
+            </Frame>
+
+            <Frame>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25*" />
+                        <ColumnDefinition Width="25*" />
+                    </Grid.ColumnDefinitions>
+                    <Image HorizontalOptions="Start" HeightRequest="110" WidthRequest="110"  Grid.Column="0" Grid.Row="0" Source="Donut.png"/>
+                    <Label Grid.Column="1" Grid.Row="0"  Text="Bagel &#10;  &#10;   Freshly baked each &#10;   morning.   &#10;  &#10;   $1.50"/>
+
+                    <Image HorizontalOptions="Start" HeightRequest="110" WidthRequest="110"  Grid.Column="0" Grid.Row="1" Source="Bites.png"/>
+                    <Label Grid.Column="1" Grid.Row="1"  Text="Eggs Benedict  &#10;   &#10;   Poached eggs over bacon &#10;   and buttered toasted &#10;   English muffin, topped &#10;   with Hollandise sauce. &#10;   &#10;   $6.50"/>
+
+                </Grid>
+
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
